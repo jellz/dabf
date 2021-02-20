@@ -1,11 +1,12 @@
 {
 	"name": "dabf",
-	"version": "0.0.2",
-	"main": "src/index.ts",
+	"version": "0.0.4",
+	"main": "dist/index.js",
 	"repository": "git@github.com:jellz/dabf",
 	"author": "Daniel <danielgulic@gmail.com>",
 	"license": "MIT",
 	"private": false,
+	"types": "dist/index.d.ts",
 	"dependencies": {
 		"callsites": "^3.1.0",
 		"discord.js": "^12.5.1",
@@ -15,7 +16,11 @@
 		"ts-results": "^3.1.1",
 		"tslog": "^3.1.1"
 	},
+	"scripts": {
+		"prepublish": "tsc"
+	},
 	"devDependencies": {
-		"@types/node": "^14.14.21"
+		"@types/node": "^14.14.21",
+		"@types/ws": "^7.4.0"
 	}
 }
